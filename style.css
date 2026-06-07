@@ -316,3 +316,325 @@ h1 {
     border-radius: 28px;
   }
 }
+/* ===== GROOXO HERO COLLAGE ===== */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  width: min(100% - 32px, 1440px);
+  min-height: 760px;
+  margin: 0 auto;
+  padding: clamp(36px, 6vw, 86px);
+  border: 1px solid var(--border);
+  border-radius: 38px;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(246, 237, 218, 0.92) 0%,
+      rgba(246, 237, 218, 0.72) 34%,
+      rgba(246, 237, 218, 0.28) 68%,
+      rgba(246, 237, 218, 0.10) 100%
+    ),
+    url("assets/images/hero-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero__content {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  max-width: none;
+  padding: 0;
+}
+
+.eyebrow {
+  position: absolute;
+  left: 510px;
+  top: 250px;
+  margin: 0;
+  color: var(--red);
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 13px;
+  font-weight: 900;
+  z-index: 12;
+}
+
+.hero__logo {
+  position: absolute;
+  left: 390px;
+  top: 270px;
+  margin: 0;
+  font-size: clamp(70px, 11vw, 150px);
+  line-height: 0.78;
+  letter-spacing: -0.1em;
+  font-weight: 950;
+  z-index: 11;
+
+  background:
+    linear-gradient(
+      115deg,
+      #1d1b18 0%,
+      #74706a 12%,
+      #f8f0d8 24%,
+      #24211d 38%,
+      #c7bda6 54%,
+      #ffffff 65%,
+      #3a3732 78%,
+      #0f0e0d 100%
+    );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  text-shadow:
+    0 2px 0px rgba(255, 255, 255, 0.45),
+    0 14px 24px rgba(0, 0, 0, 0.28),
+    0 28px 44px rgba(0, 0, 0, 0.12);
+}
+
+.hero__subtitle {
+  position: absolute;
+  left: 480px;
+  top: 405px;
+  margin: 0;
+  color: #c8322a;
+  font-size: clamp(20px, 2.2vw, 34px);
+  letter-spacing: 0.14em;
+  font-weight: 900;
+  z-index: 12;
+}
+
+.hero__text {
+  position: absolute;
+  text-align: center;
+  left: 480px;
+  top: 450px;
+  max-width: 500px;
+  margin: 0;
+  font-size: 30px;
+  line-height: 1.45;
+  z-index: 99;
+
+    background:
+    linear-gradient(
+      115deg,
+      #ff0000 0%,
+      #c40000 12%,
+      #666665 24%,
+      #24211d 38%,
+      #3b3a36 54%,
+      #3e3d3d 65%,
+      #850000 78%,
+      #740000 100%
+    );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+    text-shadow:
+    0 2px 0px rgba(255, 255, 255, 0.45),
+    0 14px 24px rgba(184, 0, 0, 0.28),
+    0 28px 44px rgba(255, 0, 0, 0.12);
+}
+
+.hero__actions {
+  position: absolute;
+  left: 610px;
+  top: 560px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin: 0;
+  z-index: 13;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  max-width: max-content;
+  min-height: 52px;
+  padding: 0 24px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.button--primary {
+  background: var(--text);
+  color: var(--white);
+}
+
+.button--secondary {
+  background: rgba(255, 255, 255, 0.58);
+  backdrop-filter: blur(8px);
+}
+
+/* Все декоративные картинки */
+.decor {
+  position: absolute;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Левая цепь */
+.decor--chain-left {
+  z-index: 7;
+  left: -95px;
+  top: 30px;
+  width: clamp(460px, 36vw, 620px);
+  opacity: 1;
+  transform: rotate(-12deg);
+  filter: drop-shadow(0 18px 22px rgba(0, 0, 0, 0.24));
+}
+
+/* Правая цепь */
+.decor--chain-right {
+  z-index: 2;
+  right: -200px;
+  top: -22px;
+  width: clamp(420px, 44vw, 790px);
+  transform: rotate(30deg);
+  filter: drop-shadow(0 18px 22px rgba(0, 0, 0, 0.24));
+}
+
+/* Нижняя цепь */
+.decor--chain-bottom {
+  z-index: 7;
+  left: 55%;
+  bottom: -200px;
+  width: clamp(660px, 66vw, 1060px);
+  opacity: 0.95;
+  transform: translateX(-20%) rotate(-200deg);
+  filter: drop-shadow(0 20px 24px rgba(0, 0, 0, 0.25));
+}
+
+/* Карточка GROOXO Studio */
+.decor--brand-card {
+  z-index: 9;
+  left: 150px;
+  top: 1px;
+  width: clamp(270px, 26vw, 460px);
+  transform: rotate(-10deg);
+  filter: drop-shadow(0 18px 20px rgba(0, 0, 0, 0.18));
+}
+
+/* Главная пчела */
+.decor--bee-main {
+  z-index: 4;
+  left: 50%;
+  top: 50px;
+  width: clamp(240px, 25vw, 420px);
+  transform: translateX(-50%);
+  height: auto;
+  filter: drop-shadow(0 22px 26px rgba(0, 0, 0, 0.26));
+}
+
+/* Маленькая пчела */
+.decor--bee-small {
+  z-index: 4;
+  left: 80%;
+  top: 650px;
+  width: clamp(120px, 13vw, 180px);
+  transform: rotate(0deg);
+  filter: drop-shadow(0 22px 26px rgba(0, 0, 0, 0.26));
+}
+
+/* Надпись Digital Coach */
+.decor--text-digital-coach {
+  z-index: 4;
+  left: 60%;
+  top: 20px;
+  width: clamp(180px, 18vw, 290px);
+  transform: rotate(-5deg);
+}
+
+/* Надпись Create the future */
+.decor--text-create-future {
+  z-index: 4;
+  right: 900px;
+  bottom: 10px;
+  width: clamp(150px, 15vw, 240px);
+  transform: rotate(20deg);
+}
+
+/* Надпись Create Inspire Digital Repeat */
+.decor--text-create-inspire {
+  z-index: 4;
+  right: 800px;
+  top: 0px;
+  width: clamp(96px, 9vw, 150px);
+}
+
+/* Мобильная версия */
+@media (max-width: 900px) {
+  .hero {
+    min-height: 720px;
+    padding: 34px 22px;
+    background-position: 62% center;
+  }
+
+  .hero__content {
+    max-width: 100%;
+    padding-top: 220px;
+  }
+
+  .hero__logo {
+    font-size: clamp(58px, 18vw, 92px);
+  }
+
+  .hero__text {
+    font-size: 16px;
+  }
+
+  .decor--bee-main {
+    top: 72px;
+    left: 50%;
+    width: 150px;
+  }
+
+  .decor--brand-card {
+    left: 18px;
+    top: 24px;
+    width: 130px;
+  }
+
+  .decor--chain-left {
+    left: -80px;
+    top: -50px;
+    width: 260px;
+    opacity: 0.75;
+  }
+
+  .decor--chain-right {
+    right: -100px;
+    top: -40px;
+    width: 250px;
+    opacity: 0.65;
+  }
+
+  .decor--chain-bottom {
+    right: -150px;
+    bottom: -60px;
+    width: 430px;
+    opacity: 0.75;
+  }
+
+  .decor--text-digital-coach {
+    left: 42%;
+    top: 30px;
+    width: 150px;
+  }
+
+  .decor--text-create-future,
+  .decor--text-create-inspire {
+    display: none;
+  }
+}
