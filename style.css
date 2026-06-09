@@ -1332,6 +1332,7 @@ h1 {
 
   .hero__subtitle {
     position: absolute;
+    color: black;
     left: 50%;
     top: 345px;
     transform: translateX(-50%);
