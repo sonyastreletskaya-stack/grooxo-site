@@ -2095,3 +2095,114 @@ body.modal-open {
     letter-spacing: -5px;
   }
 }
+
+.portfolio-work--acsp {
+  display: flex !important;
+  flex-direction: column !important;
+  overflow: hidden;
+}
+
+.portfolio-work--acsp .portfolio-work__media--acsp {
+  position: relative;
+  width: 100%;
+  min-height: 360px;
+  padding: 76px 34px 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio-work--acsp .portfolio-work__acsp-images {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 34px;
+}
+
+.portfolio-work--acsp .portfolio-work__acsp-logo {
+  display: block;
+  width: auto !important;
+  max-width: 260px !important;
+  height: auto !important;
+  max-height: 150px !important;
+  object-fit: contain !important;
+}
+
+.portfolio-work--acsp .portfolio-work__acsp-sticker {
+  display: block;
+  width: auto !important;
+  max-width: 170px !important;
+  height: auto !important;
+  max-height: 230px !important;
+  object-fit: contain !important;
+  border-radius: 16px;
+  box-shadow: 0 18px 42px rgba(40, 45, 60, 0.14);
+}
+
+.portfolio-work--acsp .portfolio-work__body {
+  width: 100%;
+  padding: 26px 34px 34px;
+}
+
+.portfolio-work--acsp .portfolio-work__site-btn {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  z-index: 5;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 17px;
+  border-radius: 999px;
+
+  background: #ffffff;
+  color: #6f7480;
+
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
+
+  box-shadow: 0 12px 28px rgba(40, 45, 60, 0.14);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.portfolio-work--acsp .portfolio-work__site-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 36px rgba(40, 45, 60, 0.2);
+}
+@media (max-width: 768px) {
+  .portfolio-work--acsp .portfolio-work__media--acsp {
+    min-height: auto;
+    padding: 66px 20px 28px;
+  }
+
+  .portfolio-work--acsp .portfolio-work__acsp-images {
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .portfolio-work--acsp .portfolio-work__acsp-logo {
+    max-width: 230px !important;
+    max-height: 130px !important;
+  }
+
+  .portfolio-work--acsp .portfolio-work__acsp-sticker {
+    max-width: 200px !important;
+    max-height: 260px !important;
+  }
+
+  .portfolio-work--acsp .portfolio-work__body {
+    padding: 24px 24px 30px;
+  }
+
+  .portfolio-work--acsp .portfolio-work__site-btn {
+    top: 14px;
+    left: 14px;
+    padding: 9px 14px;
+    font-size: 12px;
+  }
+}
