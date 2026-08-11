@@ -1781,6 +1781,33 @@ font-size: 16px;
 line-height: 1.45;
 }
 
+.portfolio-work--site-only {
+display: flex;
+flex-direction: column;
+min-height: 100%;
+background:
+radial-gradient(circle at 88% 14%, rgba(201, 59, 59, 0.16), transparent 34%),
+linear-gradient(145deg, #f4eddf 0%, #fffaf1 100%);
+}
+
+.portfolio-work__site-only-mark {
+display: flex;
+align-items: flex-end;
+min-height: 360px;
+padding: 34px;
+overflow: hidden;
+color: #171a22;
+font-size: clamp(46px, 6vw, 82px);
+font-weight: 900;
+line-height: 0.82;
+letter-spacing: -5px;
+word-break: break-word;
+}
+
+.portfolio-work--site-only .portfolio-work__body {
+margin-top: auto;
+}
+
 
 /* =========================================
 PORTFOLIO MOBILE
@@ -2204,5 +2231,12 @@ body.modal-open {
     left: 14px;
     padding: 9px 14px;
     font-size: 12px;
+  }
+
+  .portfolio-work__site-only-mark {
+    min-height: 260px;
+    padding: 24px;
+    font-size: clamp(48px, 17vw, 74px);
+    letter-spacing: -4px;
   }
 }
